@@ -2,7 +2,7 @@ version : "3"
 
 services:
   db:
-    image: mysql:8.0
+    image: mysql:5.7
     ports:
       - '3306:3306'
     environment:
@@ -21,10 +21,5 @@ services:
       sh -c "python manage.py test &&
             python manage.py migrate &&
             python manage.py runserver 0.0.0.0:8000"
-    environment:
-      - DB_HOST=db
-      - DB_NAME=app
-      - DB_USER=postgres
-      - DB_PASS=supersecretpassword
     depends_on:
       - db
