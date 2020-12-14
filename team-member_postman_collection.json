@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "f858e5c3-8865-48e9-9d1c-78ec6dfc25a7",
+		"name": "team-member",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listing team members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/member/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"member",
+						""
+					]
+				},
+				"description": "Listing team members"
+			},
+			"response": []
+		},
+		{
+			"name": "Adding a team member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "arjun",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "p p",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "arjun@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "9876543210",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/member/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"member",
+						""
+					]
+				},
+				"description": "Adding a team member"
+			},
+			"response": []
+		},
+		{
+			"name": "Editing a team member",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "arjun",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "p p",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "arjun@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "9876543211",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/member/1/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"member",
+						"1",
+						""
+					]
+				},
+				"description": "Editing a team member"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a member",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/member/2/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"member",
+						"2",
+						""
+					]
+				},
+				"description": "Delete a member"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
