@@ -9,6 +9,10 @@ and deleting a team member.
 
 ## To run the application
 
+git clone https://github.com/arjunsunil/team-member-api.git
+
+git checkout develop
+
 make sure that docker and python are installed on your system and correctly configured to run this application.
 
 run `docker-compose up --build` to rebuild and run the application
