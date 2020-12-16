@@ -20,7 +20,7 @@ class TeamMemberTests(TestCase):
         )
 
         self.assertEqual(user.email, email)
-        self.assertEqual(user.email, email)
+        self.assertEqual(user.role, role)
 
     def test_create_regular_member(self):
         """Test creating a regular member"""
@@ -38,4 +38,4 @@ class TeamMemberTests(TestCase):
         )
 
         self.assertEqual(user.email, email)
-        self.assertEqual(user.email, email)
+        self.assertEqual(user.role, role)
