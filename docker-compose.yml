@@ -18,8 +18,7 @@ services:
     volumes:
       - .:/code
     command: >
-      sh -c "python manage.py test &&
-            python manage.py migrate &&
+      sh -c "python manage.py migrate &&
             python manage.py runserver 0.0.0.0:8000"
     depends_on:
       - db
